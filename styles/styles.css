@@ -47,6 +47,10 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+    border: 1px color black;
+    padding: 10px;
+    box-shadow: none;
+
 }
 
 main img {
@@ -55,7 +59,7 @@ main img {
 }
 
 p {
-    padding: 0;
+    padding: 0px;
 }
 
 footer {
