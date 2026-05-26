@@ -8,7 +8,7 @@
 
 body header img nav {
     background-color: var(--primary-color);
-    color: var(--accent1-color)
+    color: var(--accent1-color);
 }
 
 * {
@@ -19,13 +19,13 @@ body header img nav {
 
 body {
     font-family: var(--body-font);
-    color: var(--another-color)
+    color: var(--another-color);
 }
 
 main h1 {
     font-family: var(--body-font);
     color: rgba(233, 129, 10, 0.829);
-    display: block red
+    display: block red;
 }
 
 header,
@@ -62,7 +62,7 @@ footer {
 section h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    font: var(--body-font)
+    font: var(--body-font);
 }
 
 nav,
