@@ -1,19 +1,31 @@
+* {
+    padding: 0;
+    width: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --padding: 10px;
+    --color1: white;
+    --color2: darkblue;
+}
+
 nav {
-    background-color: darkblue;
-    color: white;
-    padding: 10px;
+    background-color: var(--color2);
+    color: var(--color1);
+    padding: var(--padding);
 
 }
 
 nav a {
-    color: white;
+    color: var(--color1);
     display: block;
-    padding: 10px
+    padding: var(--padding)
 }
 
 h1 {
 
-    color: darkblue;
+    color: var(--color2);
     padding: 16px;
     text-align: center;
 }
@@ -23,7 +35,7 @@ main img {
     height: auto;
     border: 2px solid pink;
     box-shadow: 0 0 30px red;
-    padding: 10px;
+    padding: var(--padding);
 }
 
 p {
