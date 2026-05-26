@@ -130,3 +130,8 @@ main section p {
 footer p {
     margin-bottom: 0px;
 }
+
+nav {
+    display: flex;
+    gap: 30px;
+}
