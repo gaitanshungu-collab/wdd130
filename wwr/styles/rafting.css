@@ -8,7 +8,7 @@
     --another-color: rgb(29, 26, 27);
 }
 
-body head img nav {
+body header img nav {
     background-color: var(--primary-color);
     color: var(--accent1-color)
 }
