@@ -1,6 +1,5 @@
 :root {
     --primary-color: rgb(99, 139, 214);
-    --accent1-color: rgb(34, 40, 44);
     --heading-font: "Times New Roman", "serif", "Georgia";
     --body-font: Arial, sans-serif, helvetica;
     --another-color: rgb(29, 26, 27);
@@ -83,7 +82,7 @@ nav a :hover {
     border-radius: 10px;
 }
 
-.hero > article {
+.hero article {
     position: absolute;
     bottom: 10%;
     left: 5%;
