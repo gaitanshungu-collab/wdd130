@@ -151,15 +151,22 @@ nav a :hover {
 }
 
 .adventure-image {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .adventure-image img {
     width: 150px;
     height: 100px;
     object-fit: cover;
+    gap: 20px;
+
+}
+
+.adventure-image figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 footer {
