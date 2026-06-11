@@ -99,6 +99,7 @@ nav a :hover {
 .hero article img {
     width: 100px;
     border-radius: 10px;
+    float: right;
 }
 
 .hero p {
@@ -107,9 +108,14 @@ nav a :hover {
 }
 
 .history {
-    padding: 40px;
+    padding: 40px 10px;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5px;
+    gap: 30px;
 }
 
 .title {
@@ -121,15 +127,6 @@ nav a :hover {
     line-height: 1.6px;
     margin-bottom: 30px;
 
-}
-
-.history {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 5px;
-    padding: 10px;
-    gap: 30px;
 }
 
 .history img {
@@ -188,12 +185,6 @@ footer p {
 
 .socialmedia a {
     text-decoration: none;
-}
-
-.socialmedia img {
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
 }
 
 .socialmedia img {
