@@ -53,7 +53,7 @@ nav a :hover {
     background-color: rgb(60, 60, 233);
 }
 
-.hero-image {
+.hero {
     position: relative;
     width: 100%;
     height: 500px;
@@ -61,13 +61,13 @@ nav a :hover {
 
 }
 
-.hero-image img {
+.hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.hero-image h1 {
+.hero h1 {
     position: absolute;
     top: 15%;
     left: 0;
@@ -83,7 +83,7 @@ nav a :hover {
     border-radius: 10px;
 }
 
-.hero-image > article {
+.hero > article {
     position: absolute;
     bottom: 10%;
     left: 5%;
@@ -97,12 +97,12 @@ nav a :hover {
     align-items: center;
 }
 
-.hero-image article img {
+.hero article img {
     width: 100px;
     border-radius: 10px;
 }
 
-.hero-image p {
+.hero p {
     margin: 0;
     line-height: 1.5;
 }
