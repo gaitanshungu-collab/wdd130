@@ -74,7 +74,7 @@ nav a :hover {
     text-align: center;
     font-family: var(--heading-font);
     font-size: 3rem;
-    color: rgb(230, 180, 180);
+    color: rgb(129, 77, 77);
     background-color: rgba(0, 0, 0, 0.6);
     padding: 15px;
     width: 90%;
@@ -202,7 +202,6 @@ footer p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     margin: 30px 0;
-    margin: 10px;
 }
 
 .company-info h1 {
