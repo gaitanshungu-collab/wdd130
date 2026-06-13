@@ -166,8 +166,8 @@ nav a :hover {
 }
 
 footer {
-    background-color: var(--primary-color);
-    color: #1111;
+    background-color: navy;
+    color: #f1ececde;
     display: flex;
     justify-content: space-between;
     align-items: center;
