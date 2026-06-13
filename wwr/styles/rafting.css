@@ -140,7 +140,7 @@ nav a :hover {
 
 .adventure h2 {
     font-family: var(--heading-font);
-    color: rgb(147, 90, 180);
+    color: rgb(145, 83, 182);
     text-align: center;
     font-size: 2rem;
     margin-bottom: 30px;
@@ -324,7 +324,7 @@ button:hover {
 
 .employees h2 {
     font-family: var(--heading-font);
-    color: rgb(63, 61, 65);
+    color: rgb(76, 58, 95);
     text-align: center;
     font-size: 2rem;
     margin-bottom: 30px;
