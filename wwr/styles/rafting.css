@@ -177,6 +177,8 @@ footer {
     color: #f1ececde;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
     padding: 20px 60px;
 }
@@ -308,6 +310,7 @@ textarea {
 button {
     width: 100%;
     max-width: 400px;
+    padding: 12px;
     background-color: rgb(7, 85, 128);
     color: white;
     border: none;
@@ -342,6 +345,7 @@ button:hover {
 .employees-image {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     text-align: center;
 }
 
@@ -349,7 +353,6 @@ button:hover {
     width: 150px;
     height: 100px;
     object-fit: cover;
-    gap: 20px;
 
 }
 
@@ -361,7 +364,7 @@ button:hover {
 
 .home-hero {
     position: relative;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
 }
 
@@ -476,7 +479,7 @@ button:hover {
 .about-contact {
     position: relative;
     margin-top: 80px;
-    /* gap kutoka hero section */
+
     min-height: 500px;
     overflow: hidden;
 }
@@ -489,7 +492,6 @@ button:hover {
     object-fit: cover;
 
     opacity: 0.25;
-    /* picha ionekane kwa mbali */
 
     z-index: 1;
 }
@@ -513,6 +515,10 @@ button:hover {
 .cta {
     background: transparent;
     color: var(--another-color);
+}
+
+.cta a:hover {
+    background: rgb(7, 85, 128);
 }
 
 .cta a {
@@ -583,6 +589,7 @@ button:hover {
     padding: 15px;
     border: none;
     border-radius: 8px;
+    background-color: rgba(225, 225, 225, 0.95);
 }
 
 .newsletter button {
@@ -633,6 +640,11 @@ button:hover {
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     text-align: center;
+    transition: 0.4s;
+}
+
+.trip-card {
+    transform: translateY(-10px);
 }
 
 .trip-card img {
@@ -661,6 +673,7 @@ button:hover {
 
 .trip-table {
     padding: 50px 30px;
+    overflow-x: auto;
 }
 
 .trip-table h2 {
