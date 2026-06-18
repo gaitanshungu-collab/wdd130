@@ -361,13 +361,73 @@ button:hover {
 
 .home-hero {
     position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.home-hero img {
+.slides {
+    position: absolute;
     width: 100%;
-    height: 70vh;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    display: block;
+    opacity: 0;
+    animation: slider 20s infinite;
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.slide:nth-child(4) {
+    animation-delay: 15s;
+}
+
+@keyframes slider {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
 }
 
 .hero-content {
@@ -377,77 +437,250 @@ button:hover {
     transform: translate(-50%, -50%);
     text-align: center;
     color: aliceblue;
-
+    z-index: 2;
     background: rgba(7, 85, 128, 0.85);
-    padding: 25px;
+    padding: 30px;
     border-radius: 10px;
-
     width: min(90%, 700px);
 }
 
 .hero-content h1 {
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
     margin-bottom: 20px;
+    text-shadow: 1px 1px 5px black;
 
 }
 
 .hero-content p {
     font-size: clamp(1rem, 2vw, 1.3rem);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgb(68, 63, 63);
 }
 
-.btn {
+.hero-btn {
     display: inline-block;
-    background-color: var(--primary-color);
+    background-color: #0b6cb8;
     color: wheat;
     text-decoration: none;
     padding: 12px 24px;
-    border-radius: 8px;
+    border-radius: 50px;
+    transition: 0.4s;
 }
 
-.btn {
-    background-color: rgb(46, 49, 46);
+.hero-btn:hover {
+    background: white;
+    color: #0b6cb8;
+    transform: translateY(-5px);
+}
+
+.about-contact {
+    position: relative;
+    margin-top: 80px;
+    /* gap kutoka hero section */
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.about-contact-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    opacity: 0.25;
+    /* picha ionekane kwa mbali */
+
+    z-index: 1;
+}
+
+.about-contact-content {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    text-align: center;
+    padding: 80px 30px;
 }
 
 .about-preview {
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.about-preview h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.about-preview p {
-    line-height: 1.7rem;
+    background: transparent;
 }
 
 .cta {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.cta h2 {
-    margin-bottom: 15px;
+    background: transparent;
+    color: var(--another-color);
 }
 
 .cta a {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background: white;
-    color: var(--primary-color);
+    background: var(--primary-color);
+    color: white;
     text-decoration: none;
-    background-color: 10px;
-    font-weight: bold;
+    border-radius: 8px;
 }
 
 .featured {
-    padding: 50px 20px'
+    padding: 50px 20px;
+}
 
+.featured h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.featured-grid figure {
+    text-align: center;
+}
+
+.featured-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.featured-grid figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.newsletter {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 50px;
+    background: linear-gradient(135deg, rgb(83, 128, 211), rgb(7, 85, 128));
+    color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.newsletter h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.newsletter form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsletter input {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+}
+
+.newsletter button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+.newsletter button {
+    background-color: rgb(60, 60, 233);
+}
+
+.trips-hero {
+    position: relative;
+    height: 60vh;
+}
+
+.trips-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trips-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 60px 30px;
+}
+
+.trip-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.trip-card h2 {
+    margin: 20px 0;
+}
+
+.trip-card p {
+    padding: 0 20px 20px;
+}
+
+.trip-card a {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 12px 24px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.trip-table {
+    padding: 50px 30px;
+}
+
+.trip-table h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.trip-table th {
+    background: var(--primary-color);
+    color: white;
 }
